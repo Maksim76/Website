@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bliss - Ресторан</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner container">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Sweet Bliss logo" class="brand-logo">
+                <span class="brand-name">Sweet Bliss</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-i18n="navHome" onclick="showPage('home')">Əsas</a></li>
+                    <li><a href="#" data-i18n="navMenu" onclick="showPage('menu')">Menyu</a></li>
+                    <li><a href="#" data-i18n="navContact" onclick="showPage('contact')">Əlaqə</a></li>
+                </ul>
+            </nav>
+            <div class="lang-dropdown header-lang-dropdown">
+                <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">AZ <i class="fas fa-chevron-down"></i></button>
+                <div class="lang-menu">
+                    <button class="lang-option active" data-lang="az" type="button">AZ</button>
+                    <button class="lang-option" data-lang="ru" type="button">RU</button>
+                    <button class="lang-option" data-lang="en" type="button">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero page active">
+            <div class="hero-left">
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Sendviç Məkanı</p>
+                <h1 data-i18n="heroHeading">TO<br>SƏNDVİÇ<br>MƏRZ</h1>
+                <p class="hero-description" data-i18n="heroDescription">Ən yaxşı sendviç, hansı ki, siz heç vaxt dadmamısınız. Heç nə daha çox, heç nə daha az.</p>
+                <div class="hero-buttons">
+                    <a href="#order" class="hero-button" data-i18n="orderButton">Sifariş et</a>
+                    <button class="hero-button secondary" onclick="showPage('menu')" data-i18n="menuButton">Menyuya bax</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="images/sandwich.png" alt="Сэндвич">
+            </div>
+        </section>
+
+        <section id="menu" class="menu-page page">
+            <div class="container">
+                <button class="back-button" onclick="showPage('home')" data-i18n="backButton">← Geri</button>
+                <div class="section-title">
+                    <span class="section-label" data-i18n="menuSectionLabel">Bizim Sendviçlər</span>
+                    <h2 data-i18n="menuSectionTitle">Menyu</h2>
+                    <p class="section-note" data-i18n="menuSectionNote">Biz sizə hələ dadmadığınız ən yaxşı sendviçi təqdim edirik.</p>
+                </div>
+                <div class="menu-categories">
+                    <button class="menu-category" type="button" data-category="hot-dishes" data-i18n="menuCategoryHotDishes">İsti yeməklər</button>
+                    <button class="menu-category" type="button" data-category="sandwiches" data-i18n="menuCategorySandwiches">Sendviçlər</button>
+                    <button class="menu-category" type="button" data-category="sweets" data-i18n="menuCategorySweets">Şirniyyat</button>
+                    <button class="menu-category" type="button" data-category="hot-drinks" data-i18n="menuCategoryHotDrinks">İsti içkilər</button>
+                    <button class="menu-category" type="button" data-category="cold-drinks" data-i18n="menuCategoryColdDrinks">Soyuq içkilər</button>
+                </div>
+                <div class="menu-grid"></div></div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section page">
+            <div class="container">
+                <div class="order-top">
+                    <div>
+                        <p class="small-label">Заказать Онлайн</p>
+                        <h2>Невероятные ингредиенты между ломтиками нашего ремесленного хлеба</h2>
+                    </div>
+                    <span class="status-pill">Принимаем Заказы</span>
+                </div>
+                <div class="order-tabs">
+                    <button class="tab active">Самовывоз</button>
+                    <button class="tab">Доставка</button>
+                </div>
+                <div class="order-info">
+                    <p><i class="fas fa-clock"></i> Время самовывоза: До 30 минут <a href="#">Изменить</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Адрес самовывоза: Москва, Россия</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-section page">
+            <div class="container delivery-inner">
+                <div class="delivery-image">
+                    <img src="https://via.placeholder.com/600x500?text=Takeout+Box" alt="Коробка на вынос">
+                </div>
+                <div class="delivery-text">
+                    <h2>Мы Доставляем</h2>
+                    <p>Закажите сейчас и получите свой TSP, ASAP!</p>
+                    <a href="#order" class="hero-button">Заказать</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section page">
+            <div class="container reviews-inner">
+                <h2>Отзывы</h2>
+                <p class="section-note">Что сказать? Мы одержимы сэндвичами</p>
+                <div class="reviews-grid">
+                    <blockquote>“Могу ли я жениться на Баллер Классик?”<span>Джош</span></blockquote>
+                    <blockquote>“Гораздо больше, чем просто сэндвич”<span>Давина</span></blockquote>
+                    <blockquote>“Блестящие сэндвичи, отличный сервис”<span>Люси</span></blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="footer-hero page">
+            <div class="container footer-hero-inner">
+                <img src="https://via.placeholder.com/240x240?text=TSP+Logo" alt="Логотип TSP">
+                <div>
+                    <h2>Сделано с углеводами TSP</h2>
+                    <p>ул. Примерная, 1, Москва, Россия</p>
+                    <div class="footer-details">
+                        <div>
+                            <p>Пн - Пт: 8:00 - 20:00</p>
+                            <p>Сб: 9:00 - 19:00</p>
+                            <p>Вс: 9:00 - 20:00</p>
+                        </div>
+                        <div>
+                            <p>Instagram</p>
+                            <p>Facebook</p>
+                        </div>
+                        <div>
+                            <p>info@sweetbliss.ru</p>
+                            <p>+7 (123) 456-78-90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bottom-footer">
+        <div class="container footer-container">
+            <div class="footer-column footer-brand">
+                <img src="images/logo.jpg" alt="Sweet Bliss" class="footer-logo">
+                <div>
+                    <h3>Sweet Bliss</h3>
+                    <p data-i18n="footerBrandDesc">Городской ресторан сэндвичей — свежие рецепты, быстрая доставка и уютный стиль.</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 data-i18n="footerNavLabel">Навигация</h4>
+                <ul class="footer-nav">
+                    <li><a href="#" data-i18n="footerNavHome" onclick="showPage('home')">Главная</a></li>
+                    <li><a href="#" data-i18n="footerNavMenu" onclick="showPage('menu')">Меню</a></li>
+                    <li><a href="#" data-i18n="footerNavContact" onclick="showPage('contact')">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 data-i18n="footerContactLabel">Контакты</h4>
+                <div class="footer-contact-info">
+                    <p><a href="tel:+994509871788">+994 50 987 17 88</a></p>
+                    <p><a href="mailto:info@sweetbliss.ru">info@sweetbliss.ru</a></p>
+                    <p>ул. Примерная, 1<br>Москва, Россия</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 data-i18n="footerSocialLabel">Мы в соцсетях</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="container footer-bottom">
+            <p data-i18n="footerCopy">© 2026 Sweet Bliss.</p>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
