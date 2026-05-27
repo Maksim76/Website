@@ -385,11 +385,6 @@ main {
 .back-button:hover {
     text-decoration: underline;
 }
-    width: 100%;
-    border-radius: 32px;
-    object-fit: cover;
-    box-shadow: 0 30px 80px rgba(33, 59, 31, 0.12);
-}
 
 .order-section,
 .menu-section,
@@ -851,10 +846,6 @@ main {
         flex-direction: column;
         gap: 20px;
     }
-}
-    display: flex;
-    gap: 18px;
-    align-items: flex-start;
 }
 
 .footer-logo {

@@ -42,6 +42,20 @@
         footerContactLabel: 'Əlaqə',
         menuItemHotDishesName: 'Acılı toyuq bowlu',
         menuItemHotDishesDesc: 'Qril toyuq, qovrulmuş tərəvəzlər, acı sous, düyü bazası.',
+        menuItemGrilledChickenFileName: 'Qızardılmış Toyuq Filesi, Fri İlə',
+        menuItemGrilledChickenFileDesc: 'Toyuq filesi, duz, istiqat, kartof.',
+        menuItemChickenThighsFryName: 'Toyuq Budları, Fri İlə',
+        menuItemChickenThighsFryDesc: 'Toyuq budu, duz, istiqat, kartof.',
+        menuItemYarpagDolmasiName: 'Yarpağ Dolması',
+        menuItemYarpagDolmasiDesc: 'Dana əti, düyü, südst, soğan, üzüm yarpağı, quyruq, duz, istiqat.',
+        menuItemEtLangetiFryName: 'Ət Langeti, Fri İlə',
+        menuItemEtLangetiFryDesc: 'Toyuq, kartof, duz, istiqat, yağ nəhrə.',
+        menuItemToyuqSadaDuyuName: 'Toyuq, Sada Düyü İlə',
+        menuItemToyuqSadaDuyuDesc: 'Qızardılmış toyuq, duz, istiqat, nəhra yağı, sada düyü.',
+        menuItemToyuqQulayasiName: 'Toyuq Qulayası, Düyü Və Vermişəl İlə',
+        menuItemToyuqQulayasiDesc: 'Toyuq Qulayası, düyü, vermişəl, duz, istiqat.',
+        menuItemToyuqGrecqaName: 'Toyuq, Qreçka İlə',
+        menuItemToyuqGrecqaDesc: 'Toyuq, duz, istiqat, nəhra yağı, qreçka.',
         menuItemSandwichesName: 'Klassik Klub Sendviç',
         menuItemSandwichesDesc: 'Toyuq, bekon, kahı, pomidor, mayonez qovrulmuş çörəkdə.',
         menuItemSweetsName: 'Karamel Peçenye',
@@ -94,6 +108,20 @@
         footerContactLabel: 'Контакты',
         menuItemHotDishesName: 'Острый куриный боул',
         menuItemHotDishesDesc: 'Курица на гриле, овощи, острый соус, рисовая основа.',
+        menuItemGrilledChickenFileName: 'Жареное куриное филе с фри',
+        menuItemGrilledChickenFileDesc: 'Куриное филе, соль, перец, картофель фри.',
+        menuItemChickenThighsFryName: 'Куриные бедра с фри',
+        menuItemChickenThighsFryDesc: 'Куриная ножка, соль, перец, картофель фри.',
+        menuItemYarpagDolmasiName: 'Долма в виноградных листьях',
+        menuItemYarpagDolmasiDesc: 'Говяжий фарш, рис, молоко, лук, виноградный лист, курдюк, соль, перец.',
+        menuItemEtLangetiFryName: 'Мясной лангет с фри',
+        menuItemEtLangetiFryDesc: 'Мясо, картофель, соль, перец, масло.',
+        menuItemToyuqSadaDuyuName: 'Курица с простым рисом',
+        menuItemToyuqSadaDuyuDesc: 'Жареная курица, соль, перец, растительное масло, простой рис.',
+        menuItemToyuqQulayasiName: 'Куриный гуляш с рисом и сметаной',
+        menuItemToyuqQulayasiDesc: 'Куриный гуляш, рис, сметана, соль, перец.',
+        menuItemToyuqGrecqaName: 'Курица с гречкой',
+        menuItemToyuqGrecqaDesc: 'Курица, соль, перец, растительное масло, гречка.',
         menuItemSandwichesName: 'Классический клубный сэндвич',
         menuItemSandwichesDesc: 'Индейка, бекон, салат, томат, майонез на тостовом хлебе.',
         menuItemSweetsName: 'Карамельный чизкейк',
@@ -146,6 +174,20 @@
         footerContactLabel: 'Contact',
         menuItemHotDishesName: 'Spicy Chicken Bowl',
         menuItemHotDishesDesc: 'Grilled chicken, roasted veggies, spicy sauce, rice base.',
+        menuItemGrilledChickenFileName: 'Grilled Chicken Fillet with Fries',
+        menuItemGrilledChickenFileDesc: 'Chicken fillet, salt, pepper, fries.',
+        menuItemChickenThighsFryName: 'Chicken Thighs with Fries',
+        menuItemChickenThighsFryDesc: 'Chicken thigh, salt, pepper, fries.',
+        menuItemYarpagDolmasiName: 'Stuffed Grape Leaves',
+        menuItemYarpagDolmasiDesc: 'Beef, rice, milk, onion, grape leaf, tail fat, salt, pepper.',
+        menuItemEtLangetiFryName: 'Meat Langet with Fries',
+        menuItemEtLangetiFryDesc: 'Meat, potatoes, salt, pepper, oil.',
+        menuItemToyuqSadaDuyuName: 'Chicken with Plain Rice',
+        menuItemToyuqSadaDuyuDesc: 'Grilled chicken, salt, pepper, vegetable oil, plain rice.',
+        menuItemToyuqQulayasiName: 'Chicken Goulash with Rice and Cream',
+        menuItemToyuqQulayasiDesc: 'Chicken goulash, rice, sour cream, salt, pepper.',
+        menuItemToyuqGrecqaName: 'Chicken with Buckwheat',
+        menuItemToyuqGrecqaDesc: 'Chicken, salt, pepper, vegetable oil, buckwheat.',
         menuItemSandwichesName: 'Classic Club Sandwich',
         menuItemSandwichesDesc: 'Turkey, bacon, lettuce, tomato, mayo on toasted bread.',
         menuItemSweetsName: 'Caramel Cheesecake',
@@ -162,7 +204,14 @@ let currentMenuCategory = 'sandwiches';
 
 const menuItemsByCategory = {
     'hot-dishes': [
-        { nameKey: 'menuItemHotDishesName', descKey: 'menuItemHotDishesDesc', price: '599 ₽', image: 'images/sandwich.png' }
+        { nameKey: 'menuItemHotDishesName', descKey: 'menuItemHotDishesDesc', price: '599 ₽', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemGrilledChickenFileName', descKey: 'menuItemGrilledChickenFileDesc', price: '7,00 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemChickenThighsFryName', descKey: 'menuItemChickenThighsFryDesc', price: '6,00 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemYarpagDolmasiName', descKey: 'menuItemYarpagDolmasiDesc', price: '10,00 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemEtLangetiFryName', descKey: 'menuItemEtLangetiFryDesc', price: '8,00 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemToyuqSadaDuyuName', descKey: 'menuItemToyuqSadaDuyuDesc', price: '8,00 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemToyuqQulayasiName', descKey: 'menuItemToyuqQulayasiDesc', price: '8,50 AZN', image: 'images/sandwich.png' },
+        { nameKey: 'menuItemToyuqGrecqaName', descKey: 'menuItemToyuqGrecqaDesc', price: '8,00 AZN', image: 'images/sandwich.png' }
     ],
     'sandwiches': [
         { nameKey: 'menuItemSandwichesName', descKey: 'menuItemSandwichesDesc', price: '549 ₽', image: 'images/sandwich.png' }
@@ -225,17 +274,16 @@ function renderMenuItems(category = currentMenuCategory) {
         const image = document.createElement('img');
         image.className = 'menu-card-image';
         image.src = item.image;
-        image.alt = translationsForLang[item.nameKey] || '';
+        image.alt = item.name || translationsForLang[item.nameKey] || '';
 
         const body = document.createElement('div');
         body.className = 'menu-card-body';
 
         const title = document.createElement('h3');
-        title.textContent = translationsForLang[item.nameKey] || '';
+    title.textContent = item.name || translationsForLang[item.nameKey] || '';
 
-        const description = document.createElement('p');
-        description.textContent = translationsForLang[item.descKey] || '';
-
+    const description = document.createElement('p');
+    description.textContent = item.desc || translationsForLang[item.descKey] || '';
         const footer = document.createElement('div');
         footer.className = 'menu-card-footer';
 
